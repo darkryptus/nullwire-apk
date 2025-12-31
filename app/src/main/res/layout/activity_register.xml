@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center_horizontal"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textAlignment="center"
+         android:textSize="40dp"
+         android:textColor="@color/black"
+         android:text="Sign Up" />
+
+
+    <EditText
+         android:layout_height="wrap_content"
+         android:layout_width="320dp"
+         android:background="@drawable/rectangle"
+         android:hint="Enter your Username"
+         android:padding="12dp"
+         android:layout_marginTop="30dp"
+         android:inputType="text"
+         android:id="@+id/usr" />
+
+    <EditText
+         android:layout_height="wrap_content"
+         android:layout_width="320dp"
+         android:background="@drawable/rectangle"
+         android:hint="Enter your Email Address"
+         android:padding="12dp"
+         android:layout_marginTop="10dp"
+         android:inputType="textEmailAddress"
+         android:id="@+id/email" />
+
+    <EditText
+         android:layout_height="wrap_content"
+         android:layout_width="320dp"
+         android:background="@drawable/rectangle"
+         android:hint="Enter your Password"
+         android:padding="12dp"
+         android:layout_marginTop="10dp"
+         android:inputType="textPassword"
+         android:id="@+id/passwd" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="15dp"
+         android:layout_marginLeft="100dp"
+         android:layout_marginTop="5dp"
+         android:text="Forgot pasword?" />
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="300dp"
+         android:backgroundTint="@android:color/black"
+         android:textColor="@android:color/white"
+         android:layout_marginTop="10dp"
+         android:id="@+id/submitBtn"
+         android:text="Sign Up" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textSize="15dp"
+         android:layout_marginTop="10dp"
+         android:text="Already have an account?    Sign In" />
+
+</LinearLayout>

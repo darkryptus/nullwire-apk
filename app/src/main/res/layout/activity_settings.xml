@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="Settings" />
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textAllCaps="false"
+         android:text="Log Out"
+         android:id="@+id/logout" />
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textAllCaps="false"
+         android:layout_marginTop="50dp"
+         android:text="Theme"
+         android:id="@+id/theme" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="100dp"
+         android:visibility="gone"
+         android:orientation="vertical"
+         android:layout_marginTop="10dp"
+         android:id="@+id/themeBelow"
+>
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:textAllCaps="false"
+             android:text="system"
+             android:id="@+id/system" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:textAllCaps="false"
+             android:text="dark"
+             android:id="@+id/dark" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:textAllCaps="false"
+             android:text="light"
+             android:id="@+id/light" />
+
+    </LinearLayout>
+
+</LinearLayout>
