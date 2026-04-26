@@ -43,7 +43,7 @@ private WebSocketClient webSocketClient;
 private void createWebSocketClient() {
 	URI uri;
         try {
-            uri = new URI("ws://localhost:7272/wsMsg");
+            uri = new URI("wss://nullwire.us.to/wsMsg");
         }
         catch (URISyntaxException e) {
             e.printStackTrace();
@@ -338,7 +338,7 @@ public void onCloseReceived() {
             e.printStackTrace();
         }
 
-        AndroidNetworking.post("http://192.0.0.4:7272/msgRetreiver") //retriever's spell is wrong in server
+        AndroidNetworking.post("https://nullwire.us.to/msgRetreiver") //retriever's spell is wrong in server
             .addJSONObjectBody(jsonObjectToSend)
             .build()
             .getAsJSONObject( new JSONObjectRequestListener() {
