@@ -179,7 +179,7 @@ public class ChatActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        AndroidNetworking.post("http://192.0.0.4:7272/dataRetreiver")
+        AndroidNetworking.post("https://nullwire.us.to/dataRetreiver")
             .addJSONObjectBody(jsonObjectToSend)
             .build()
             .getAsJSONObject( new JSONObjectRequestListener() {
