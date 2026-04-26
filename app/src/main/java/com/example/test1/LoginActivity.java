@@ -108,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        AndroidNetworking.post("http://192.0.0.4:7272/validator")
+        AndroidNetworking.post("https://nullwire.us.to/validator")
             .addJSONObjectBody(jsonObjectToSend)
             .build()
             .getAsString( new StringRequestListener() {
